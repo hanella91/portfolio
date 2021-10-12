@@ -98,7 +98,7 @@ p {
   font-size: var(--font-regular);
   font-weight: var(--font-regular);
   color: var(--color-black);
-  margin: 4px 0;
+  margin: 20px 0;
 }
 
 
@@ -168,14 +168,16 @@ p {
 
 /* Section common */
 /* 공통된 부분(section) 설정 */
-
 .section {
   padding: 50px;
   text-align: center;
-  max-width: 1200px;
   margin: auto;
 }
 
+.section__container {
+  max-width: 1200px;
+  margin : auto;
+}
 /* About */
 .about__majors {
   display : flex;
@@ -245,3 +247,59 @@ p {
 .school__period {
   font-size : var(--font-micro);
 }
+/* skills */
+#skills {
+  background-color: var(--color-beige);
+}
+
+.skillset {
+  display: flex;
+  background-color: #556B2F;
+  color: var(--color-white);
+}
+
+.skillset__title{
+  color: var(--color-white);
+}
+.skillset__left {
+  flex-basis: 50%;
+  background-color: var(--color-green);
+  padding : 20px 130px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-light-grey);
+  margin-bottom:15px
+}
+
+.skillset__right {
+  flex-basis: 50%;
+}
+
+.tools {
+  background-color: var(--color-lightgreen);
+}
+
+.tools, .etc {
+  padding: 20px;
+}
+
+.tools li{
+  margin: 10px
+}
+}
+/* Work */
+.category__btn { 
+  border: 1px solid var(--color-dark-grey);
+  border-radius : var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding:  8px 48px;
+}
+
