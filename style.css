@@ -13,6 +13,9 @@
   --color-lightgreen: #3E6A40;
   --color-black: #000000;
   --color-green: #004225;
+  --color-melon: #3b76ad;
+  --color-light-grey:#778899;
+
 
   /* Font Size */
   --font-large: 48px;
@@ -29,7 +32,12 @@
 
   /* Size */
   --size-border-radius: 4px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
 }
+
+
 
 /* Universal tags */
 *{
@@ -93,11 +101,8 @@ p {
   margin: 4px 0;
 }
 
+
 /* Navbar */
-/* 박스가 양쪽에 나오도록 한다.
-
-*/
-
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -159,4 +164,84 @@ p {
   padding: 8px 12px;
   border : 2px solid var(--color-green);
   border-radius : var(--size-border-radius);
+}
+
+/* Section common */
+/* 공통된 부분(section) 설정 */
+
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display : flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  border: 1px solid var(--color-melon);
+  border-radius: 50%;
+  color: var(--color-melon);
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover {
+  color: var(--color-yellow);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-grey);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.major__title {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.school {
+  display: flex;
+  align-items:center;
+}
+
+.school {
+  margin: 0 20px 10px;
+  text-align: left;
+}
+
+.school__logo {
+  margin-right : 20px;
+}
+.school__name,
+.school__period {
+  color: var(--color-grey);
+}
+
+.school__name {
+  font-size : var(--font-micro);
+}
+
+.school__period {
+  font-size : var(--font-micro);
 }
