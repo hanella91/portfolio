@@ -8,15 +8,18 @@
   --color-yellow: #FFB740;
   --color-camel: #DF711B;
   --color-grey: #616161;
+  --color-frenchgrey: #EDE8E8;
   --color-dark-grey: #4d4d4d;
+  --color-lightgreen: #3E6A40;
   --color-black: #000000;
+  --color-green: #004225;
 
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
-  --font-micro: 14px
+  --font-micro: 14px;
 
   /* Font Weight */
 
@@ -39,12 +42,27 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+}
+
+a.logo_link{
+  font-size: var(--font-medium);
+  color: var(--color-yellow);
 }
 
 ul {
   list-style: none;
   padding-left : 0;
+}
+
+li {
+  list-style:none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 /* Typography */
 h1 {
@@ -83,11 +101,10 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-yellow);
+  background-color: var(--color-green);
   align-items: center;
-  font-weight: bold;
-  color: var(--color-white);
-  padding: 16px
+  font-weight: var(--weight-bold);
+  color: var(--color-beige);
 }
 
 .navbar__menu {
@@ -95,6 +112,7 @@ p {
 }
 
 .navbar__logo{
+  color: var(--color-yellow);
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
@@ -107,9 +125,38 @@ p {
 }
 
 .navbar__menu__item.active{
-  border : 1px solid var(--color-white);
+  border : 1px solid var(--color-frenchgrey);
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-camel);
+  background-color: var(--color-lightgreen);
+}
+
+/* Home */
+#home {
+  background: url("imgs/portfoliobg.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-lightgreen);
+}
+
+.home__title, 
+.home__description {
+  color: var(--color-green);
+}
+
+.home__contact {
+  color: var(--color-green);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border : 2px solid var(--color-green);
+  border-radius : var(--size-border-radius);
 }
