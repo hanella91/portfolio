@@ -143,7 +143,7 @@ p {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 2px solid var(--color-lightgreen);
+  border: 2px solid var(--color-yellow);
 }
 
 .home__title, 
