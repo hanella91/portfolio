@@ -54,7 +54,7 @@ a {
 
 a.logo_link{
   font-size: var(--font-medium);
-  color: var(--color-yellow);
+  color: var(--color-green);
 }
 
 ul {
@@ -104,14 +104,23 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
   width:100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-green);
+  background-color: transparent;
   align-items: center;
   font-weight: var(--weight-bold);
-  color: var(--color-beige);
+  color: var(--color-green);
+  transition: all var(--animation-duration) ease-in-out;
 }
+
+
+#navbar.navbar--dark  {
+  background-color: var(--color-yellow);
+  padding: 5px;
+}
+
 
 .navbar__menu {
   display: flex;
