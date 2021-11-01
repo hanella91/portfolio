@@ -142,7 +142,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-lightgreen);
+  background-color: var(--color-yellow);
 }
 
 /* Home */
