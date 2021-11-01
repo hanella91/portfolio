@@ -54,7 +54,7 @@ a {
 
 a.logo_link{
   font-size: var(--font-medium);
-  color: var(--color-green);
+  color: var(--color-white);
 }
 
 ul {
@@ -111,23 +111,21 @@ p {
   background-color: transparent;
   align-items: center;
   font-weight: var(--weight-bold);
-  color: var(--color-green);
+  color: var(--color-white);
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
-
-#navbar.navbar--dark  {
+#navbar.navbar--dark {
   background-color: var(--color-yellow);
-  padding: 5px;
 }
-
 
 .navbar__menu {
   display: flex;
 }
 
 .navbar__logo{
-  color: var(--color-yellow);
+  color: var(--color-white);
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
@@ -144,13 +142,14 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-lightgreen);
+  background-color: var(--color-yellow);
 }
 
 /* Home */
 #home {
   background: url("imgs/portfoliobg.png") center/cover no-repeat;
   padding: 40px;
+  padding-top:120px;
   text-align: center;
 }
 
