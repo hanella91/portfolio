@@ -113,6 +113,7 @@ p {
   font-weight: var(--weight-bold);
   color: var(--color-white);
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
