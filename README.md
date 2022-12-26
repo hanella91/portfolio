@@ -1,2 +1,2 @@
 # portfolio
- Hanbyeol's portfolio
+ simple web portfolio
