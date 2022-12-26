@@ -1,2 +1,2 @@
 # portfolio
- simple web portfolio
+ simple web profile
